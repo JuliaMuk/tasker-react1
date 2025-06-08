@@ -18,7 +18,7 @@ function App() {
       </header>
       <main>
         <FormCraeteTAsk addTask = {setTasks} tasks={tasks}/>
-        <Container tasks={tasks}/>
+        <Container tasks={tasks} deleteTask= {setTasks} />
       </main>
     </div>
   );

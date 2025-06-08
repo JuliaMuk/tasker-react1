@@ -1,7 +1,7 @@
 import Task from "../Task/Task";
 import './Container.css';
-export default function Container({tasks}){
-    
+export default function Container({tasks, deleteTask}){
+        
     return (
         <div className="container">
             {
@@ -9,6 +9,8 @@ export default function Container({tasks}){
                     <Task 
                         name={item} 
                         key={index} 
+                        tasks = {tasks}
+                        deleteTask = {deleteTask}
                     />
                 ))
             }
