@@ -1,11 +1,7 @@
 import Task from "../Task/Task";
 import './Container.css';
-export default function Container(){
-    let tasks = [
-        'купить молоко',
-        'сделать ИДЗ',
-        'сходить в театр'
-    ]
+export default function Container({tasks}){
+    
     return (
         <div className="container">
             {
